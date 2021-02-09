@@ -1,5 +1,8 @@
 ![store](http://alongubkin.github.com/store/logo.png "store")
 
+#### NOTE:
+THIS IS NOT MY PLUGIN NOR DO I TAKE ANY CREDIT FOR IT, I JUST CLONED THE REPOSITORY AND IMPLEMENTED A FEW FIXES.
+
 ## Description
 An open store plugin for SourceMod. 
 
