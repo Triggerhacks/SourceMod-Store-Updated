@@ -3,8 +3,8 @@
 #endif
 #define _store_included
 
+#include <store/store-stocks>
 #include <store/store-core>
-#include <store/store-backend>
 #include <store/store-inventory>
 #include <store/store-shop>
 #include <store/store-loadouts>
@@ -19,6 +19,6 @@
 
 #define STORE_AUTHORS "Alongub, Keith Warren(Drixevel), Arrow768"
 #define STORE_URL "https://github.com/SourceMod-Store/store"
-#define STORE_VERSION "1.2.1"
+#define STORE_VERSION "1.3 Revived"
 
 #define STORE_PREFIX "\x04[Store] \x01"

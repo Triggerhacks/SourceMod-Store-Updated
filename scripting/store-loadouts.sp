@@ -12,7 +12,6 @@
 
 #define PLUGIN_NAME "[Store] Loadouts Module"
 #define PLUGIN_DESCRIPTION "Loadouts module for the Sourcemod Store."
-#define PLUGIN_VERSION_CONVAR "store_loadouts_version"
 
 //Config Globals
 
@@ -55,7 +54,7 @@ public void OnPluginStart()
 	LoadTranslations("common.phrases");
 	LoadTranslations("store.phrases");
 	
-	CreateConVar(PLUGIN_VERSION_CONVAR, STORE_VERSION, PLUGIN_NAME, FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_PLUGIN|FCVAR_SPONLY|FCVAR_DONTRECORD);
+	CreateConVar(STORE_VERSION, STORE_VERSION, PLUGIN_NAME, FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_SPONLY|FCVAR_DONTRECORD);
 	
 	g_lastClientLoadout = RegClientCookie("lastClientLoadout", "Client loadout", CookieAccess_Protected);
 	
@@ -84,7 +83,7 @@ public void Store_OnDatabaseInitialized()
 	g_databaseInitialized = true;
 	Store_GetLoadouts(INVALID_HANDLE, INVALID_FUNCTION, false);
 	
-	Store_RegisterPluginModule(PLUGIN_NAME, PLUGIN_DESCRIPTION, PLUGIN_VERSION_CONVAR, STORE_VERSION);
+	Store_RegisterPluginModule(PLUGIN_NAME, PLUGIN_DESCRIPTION, "1.0", STORE_VERSION);
 }
 
 public void OnClientCookiesCached(int client)
