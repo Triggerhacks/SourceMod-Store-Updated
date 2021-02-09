@@ -2,6 +2,7 @@
 
 # NOTE:
 THIS IS NOT MY PLUGIN NOR DO I TAKE ANY CREDIT FOR IT, I JUST CLONED THE REPOSITORY AND IMPLEMENTED A FEW FIXES.
+As such I guarantee nothing actually functioning but feel free to create an issue in case you find an error (or a pull request if you were able to fix it)!
 
 ## Description
 An open store plugin for SourceMod. 
